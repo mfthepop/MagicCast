@@ -3,7 +3,7 @@
 ## Main Idea
 Fight 1v1 with Boss
 ## Start of the Game
-U can choose sight: light or dark
+U can choose side: light or dark
 ### Light
 - all block scills +1 sec
 - Expecto Patronum
