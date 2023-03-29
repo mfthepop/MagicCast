@@ -3,6 +3,7 @@ using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.Events;
 
+
 namespace Unity.FPS.Gameplay
 {
     [RequireComponent(typeof(CharacterController), typeof(PlayerInputHandler), typeof(AudioSource))]
@@ -119,7 +120,7 @@ namespace Unity.FPS.Gameplay
         }
 
         Health m_Health;
-        PlayerInputHandler m_InputHandler;
+        public PlayerInputHandler m_InputHandler;
         CharacterController m_Controller;
         PlayerWeaponsManager m_WeaponsManager;
         Actor m_Actor;
@@ -141,13 +142,13 @@ namespace Unity.FPS.Gameplay
                 actorsManager.SetPlayer(gameObject);
         }
 
-        void Start()
+    void Start()
         {
             // fetch components on the same gameObject
             m_Controller = GetComponent<CharacterController>();
             DebugUtility.HandleErrorIfNullGetComponent<CharacterController, PlayerCharacterController>(m_Controller,
                 this, gameObject);
-
+            
             m_InputHandler = GetComponent<PlayerInputHandler>();
             DebugUtility.HandleErrorIfNullGetComponent<PlayerInputHandler, PlayerCharacterController>(m_InputHandler,
                 this, gameObject);
@@ -170,6 +171,8 @@ namespace Unity.FPS.Gameplay
             SetCrouchingState(false, true);
             UpdateCharacterHeight(true);
         }
+
+
 
         void Update()
         {
