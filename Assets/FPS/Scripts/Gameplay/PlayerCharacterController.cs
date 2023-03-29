@@ -1,4 +1,5 @@
-﻿using Unity.FPS.Game;
+﻿using System.Collections;
+using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.Events;
 
