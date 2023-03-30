@@ -561,6 +561,7 @@ MonoBehaviour:
   FallDamageAtMinSpeed: 10
   FallDamageAtMaxSpeed: 30
   m_InputHandler: {fileID: 0}
+  m_Controller: {fileID: 0}
 --- !u!114 &1360575517897679518
 MonoBehaviour:
   m_ObjectHideFlags: 0

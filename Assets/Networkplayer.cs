@@ -21,10 +21,12 @@ public class Networkplayer : MonoBehaviour
         if (Nwtworko.IsOwner && Nwtworko.IsPlayerObject)
         {
             GetComponent<PlayerCharacterController>().m_InputHandler = GetComponent<PlayerInputHandler>();
+            GetComponent<PlayerCharacterController>().m_Controller = GetComponent<CharacterController>();
         }
         else
         {
             GetComponent<PlayerCharacterController>().m_InputHandler =null;
+            GetComponent<PlayerCharacterController>().m_Controller = null;
         }
             
     }
