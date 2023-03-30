@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine;
 
+
 namespace Unity.FPS.Gameplay
 {
     public class PlayerInputHandler : MonoBehaviour

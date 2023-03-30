@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Lobby.unity
     guid: adcda081da2352c4381cef8dc17fad6a
+  - enabled: 1
+    path: Assets/Game.unity
+    guid: f6deb0bd88309d441b6d89c1977984cf
   - enabled: 0
     path: Assets/NetcodeMulti.unity
     guid: d7ebca87d396b8f48847e466a80525cb
