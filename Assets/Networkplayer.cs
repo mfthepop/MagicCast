@@ -12,7 +12,12 @@ public class Networkplayer : MonoBehaviour
     public NetworkObject Nwtworko;
     void Start()
     {
+        if (!Nwtworko.IsOwner )
+        {
+            Destroy(GetComponentInChildren<Camera>().gameObject);
             
+        }
+
     }
 
     // Update is called once per frame
