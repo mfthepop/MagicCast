@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using Unity.FPS.Game;
+﻿using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.Events;
-
 
 namespace Unity.FPS.Gameplay
 {
@@ -171,8 +169,6 @@ namespace Unity.FPS.Gameplay
             SetCrouchingState(false, true);
             UpdateCharacterHeight(true);
         }
-
-
 
         void Update()
         {
