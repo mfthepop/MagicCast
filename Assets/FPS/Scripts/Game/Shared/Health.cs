@@ -14,7 +14,9 @@ namespace Unity.FPS.Game
         public UnityAction<float> OnHealed;
         public UnityAction OnDie;
 
-        public float CurrentHealth { get; set; }
+
+        [SerializeField]
+        public float CurrentHealth;
         public bool Invincible { get; set; }
         public bool CanPickup() => CurrentHealth < MaxHealth;
 

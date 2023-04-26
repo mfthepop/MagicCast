@@ -15,7 +15,8 @@ public class Networkplayer : MonoBehaviour
         if (!Nwtworko.IsOwner )
         {
             Destroy(GetComponentInChildren<Camera>().gameObject);
-            
+            GetComponent<Actor>().Affiliation = 0;
+
         }
 
     }
@@ -31,7 +32,7 @@ public class Networkplayer : MonoBehaviour
         else
         {
             GetComponent<PlayerCharacterController>().m_InputHandler =null;
-            GetComponent<PlayerCharacterController>().m_Controller = null;
+            //GetComponent<PlayerCharacterController>().m_Controller = null;
         }
             
     }
